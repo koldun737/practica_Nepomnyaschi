@@ -1,6 +1,9 @@
-﻿namespace practica_Nepomnyaschi.Services
+﻿using practica_Nepomnyaschi.DTO;
+namespace practica_Nepomnyaschi.Services
 {
-    public class IScheduleService
+    public interface IScheduleService
     {
+        Task<List<ScheduleByDateDto>> GetScheduleForGroup(string groupName, DateTime
+       startDate, DateTime endDate);
     }
 }
